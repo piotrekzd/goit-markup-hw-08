@@ -1,0 +1,11 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--header-border);
+    background: var(--white-color);
+
+    .page-header__container & {
+        padding-left: 215px;
+    }
+}

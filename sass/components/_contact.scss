@@ -1,0 +1,24 @@
+.contact {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--grey-color);
+    fill: var(--grey-color);
+}
+
+.contact:hover {
+    fill: var(--blue-color);
+}
+
+.contact-mail {
+    margin-left: auto;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+.contact__icon {
+    margin-right: 10px;
+}
