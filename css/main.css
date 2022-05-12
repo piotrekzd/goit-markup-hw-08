@@ -97,6 +97,7 @@ p {
   .page-header {
     padding-top: 21px;
     padding-bottom: 21px;
+    border-bottom: 1px solid var(--header-border);
   }
 }
 
@@ -197,6 +198,7 @@ p {
     margin-right: 46px;
   }
   .navigation__link {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -210,7 +212,8 @@ p {
   }
   .navigation__link--active::after {
     content: "";
-    margin-top: 28px;
+    position: absolute;
+    top: 50px;
     display: block;
     background-color: var(--blue-color);
     width: 100%;

@@ -48,6 +48,7 @@
     }
 
     .navigation__link {
+        position: relative;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.143;
@@ -63,7 +64,8 @@
 
         &--active::after {
         content: "";
-        margin-top: 28px;
+        position: absolute;
+        top: 50px;
         display: block;
         background-color: var(--blue-color);
         width: 100%;
