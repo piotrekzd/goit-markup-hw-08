@@ -1,9 +1,14 @@
 .about-us {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+.about-us {
     padding-top: 0px;
 }
 
 .about-us__list {
-    // margin-left: -30px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +24,6 @@
 
 .about-us__item {
     display: inline-flex;
-    // flex-basis: calc(100%/3-30px);
 }
 
 .thumb {
@@ -38,4 +42,5 @@
     text-transform: uppercase;
     color: var(--white-color);
     background: rgba(47, 48, 58, 0.8);
+}
 }

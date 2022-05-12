@@ -35,25 +35,36 @@
             </li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="contact contact--mail">
+        <ul class="contact__list">
+          <li class="contact__item">
+        <a href="mailto:info@devstudio.com" class="contact__link contact__link--mail">
           <svg class="contact__icon" width="16" height="12">
             <use href="./images/icons.svg#envelope"></use>
           </svg>
           info@devstudio.com
         </a>
-        <a href="tel:+48111111111" class="contact contact--tel">
+          </li>
+          <li class="contact__item">
+        <a href="tel:+48111111111" class="contact__link contact__link--tel">
           <svg class="contact__icon" width="10" height="16">
             <use href="./images/icons.svg#smartphone"></use>
           </svg>
           +48 111 111 111
         </a>
+          </li>
+        </ul>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="section welcome">
         <div class="container">
-          <h1 class="welcome__heading">efektywne rozwiązania dla waszego biznesu</h1>
+          <h1 class="welcome__heading">efektywne rozwiązania dla <br> waszego biznesu</h1>
           <button type="button" class="button welcome__btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
@@ -129,21 +140,21 @@
           <ul class="about-us__list">
             <li class="about-us__item">
               <div class="thumb">
-                <img src="./images/komp1.jpg" alt="komputer" width="370" height="294" />
+                <img src="./images/about-us/about-us1_1200.jpg" srcset="./images/about-us/about-us2_1200.jpg 1x, ./images/about-us/about-us2_1200@2.jpg 2x" alt="komputer" />
                   <p class="thumb__label">aplikacje komputerowe</p>
                 </img>
               </div>
             </li>
             <li class="about-us__item">
               <div class="thumb">
-                <img src="./images/komp2.jpg" altim="smartphone" width="370" height="294" />
+                <img src="./images/about-us/about-us2_1200.jpg" srcset="./images/about-us/about-us2_1200.jpg 1x, ./images/about-us/about-us2_1200@2.jpg 2x" alt="smartphone" />
                   <p class="thumb__label">aplikacje mobilne</p>
                 </img>
               </div>
             </li>
             <li class="about-us__item">
               <div class="thumb">
-                <img src="./images/komp3.jpg" alt="tablet" width="370" height="294" />
+                <img src="./images/about-us/about-us3_1200.jpg" srcset="./images/about-us/about-us3_1200.jpg 1x, ./images/about-us/about-us3_1200@2.jpg 2x" alt="tablet" />
                   <p class="thumb__label">rozwiązania graficzne</p>
                 </img>
               </div>
@@ -158,7 +169,12 @@
           <ul class="team__list">
             <li class="team__item">
               <figure class="team__card">
-                <img src="./images/johndoe1.jpg" alt="product designer" width="270" height="260" />
+                <picture>
+                  <source srcset="./images/team/team1_480.jpg 1x, ./images/team/team1_480@2.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="./images/team/team1_768.jpg 1x, ./images/team/team1_768@2.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="./images/team/team1_1200.jpg 1x, ./images/team/team1_1200@2.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/team/team1_480.jpg" alt="product designer" />
+                </picture>
                   <figcaption class="team__name">
                     John Doe
                     <p class="team__text">Product Designer</p>
@@ -190,7 +206,12 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img src="./images/johndoe2.jpg" alt="frontend developer" width="270" height="260">
+                <picture>
+                  <source srcset="./images/team/team2_480.jpg 1x, ./images/team/team2_480@2.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="./images/team/team2_768.jpg 1x, ./images/team/team2_768@2.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="./images/team/team2_1200.jpg 1x, ./images/team/team2_1200@2.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/team/team2_480.jpg" alt="frontend developer" />
+                </picture>
                   <figcaption class="team__name">
                     John Doe
                     <p class="team__text">Frontend Developer</p>
@@ -222,7 +243,12 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img src="./images/johndoe3.jpg" alt="marketing" width="270" height="260">
+                <picture>
+                  <source srcset="./images/team/team3_480.jpg 1x, ./images/team/team3_480@2.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="./images/team/team3_768.jpg 1x, ./images/team/team3_768@2.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="./images/team/team3_1200.jpg 1x, ./images/team/team3_1200@2.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/team/team3_480.jpg" alt="marketing" />
+                </picture>
                   <figcaption class="team__name">
                     John Doe
                     <p class="team__text">Marketing</p>
@@ -254,7 +280,12 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img src="./images/johndoe4.jpg" alt="ui designer" width="270" height="260">
+                <picture>
+                  <source srcset="./images/team/team4_480.jpg 1x, ./images/team/team4_480@2.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="./images/team/team4_768.jpg 1x, ./images/team/team4_768@2.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="./images/team/team4_1200.jpg 1x, ./images/team/team4_1200@2.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/team/team4_480.jpg" alt="ui designer" />
+                </picture>
                   <figcaption class="team__name">
                     John Doe
                     <p class="team__text">UI Designer</p>
@@ -501,8 +532,47 @@
         </form>
       </div>
     </div>
-    
     <script src="./js/modal.js"></script>
+
+    <div class="mobile-menu is-hidden" data-menu>
+      <svg class="mobile-menu__close-btn" data-menu-close>
+        <use href="./images/icons.svg#close-black"></use>
+      </svg>
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a href="index.html" class="mobile-menu__nav-link">Agencja</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="portfolio.html" class="mobile-menu__nav-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" class="mobile-menu__nav-link">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+          <a href="tel:48111111111" class="mobile-menu__tel">+48 111 111 111</a>
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu__mail">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item">
+          <a href="https://instagram.com/" class="mobile-menu__social-link" target="_blank">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a href="https://twitter.com/" class="mobile-menu__social-link" target="_blank">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a href="https://facebook.com/" class="mobile-menu__social-link" target="_blank">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a href="htttps://linkedin.com/" class="mobile-menu__social-link" target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 
   </body>
 </html>
