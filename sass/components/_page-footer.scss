@@ -147,7 +147,6 @@
             }
         
             .footer-social {
-                margin-top: 60px;
                 display: flex;
                 flex-direction: column;
         
@@ -198,20 +197,105 @@
 
 
 @media screen and (min-width: 1200px) {
-
     .page-footer__section {
-        padding-top: 0;
-        padding-bottom: 60px;
         background-color: var(--footer-background);
     }
 
     .page-footer__container {
         display: flex;
-        align-items: flex-start;
     }
 
-    .footer-newsletter {
-        margin-top: 72px;
-        margin-left: 77px;
+    .page-footer__wrapper {
+        display: flex;
+    }
+
+    .footer-address {
+        list-style: none;
+    }
+
+    .address {
+        width: 247px;
+    }
+
+    .address__list {
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .address__item {
+        margin-top: 9px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    .address__link {
+        font-style: normal;
+        color: var(--grey-color);
+    }
+
+    .address__link--nav {
+        font-style: normal;
+        color: var(--white-color);
+    }
+
+    .footer-social {
+        margin-left: 70px;
+        margin-right: 78px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+
+        &__heading {
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--white-color);
+        }
+
+        &__list {
+            display: inline-flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:last-child) {
+                padding-right: 10px;
+            }
+        }
+
+        &__link {
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            fill: var(--white-color);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: var(--footer-social-icons);
+            border-radius: 50%;
+
+            &:hover,
+            &:focus,
+            &:active {
+                fill: var(--white-color);
+                background-color: var(--blue-color);
+            }
+        }
+
+        // .footer-newsletter {
+        //     margin-top: 72px;
+        //     margin-left: 77px;
+        // }
     }
 }
