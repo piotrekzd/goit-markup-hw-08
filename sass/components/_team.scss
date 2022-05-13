@@ -1,3 +1,5 @@
+@media screen and (min-width: 1200px) {
+
 .team-section {
     background: var(--hero-background);
 }
@@ -69,4 +71,5 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
 }
