@@ -1,0 +1,113 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .page-footer__section {
+        background: var(--footer-background);
+    }
+
+    .page-footer__container {
+        padding-bottom: 60px;
+        align-items: center;
+    }
+
+    .footer-address {
+        text-align: center;
+    }
+
+    .address__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .address__item {
+        margin-top: 9px;
+    }
+
+    .address__link {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: var(--grey-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--nav {
+            font-style: normal;
+            color: var(--white-color);
+        }
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
+        }
+    }
+
+    .footer-social {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        &__heading {
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.14;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--white-color);
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &__link {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            fill: var(--social-icon);
+            background-color: transparent;
+            transition-property: fill, background-color;
+            transition-duration: 250ms;
+            transition-timing-function: (0.4, 0, 0.2, 1);
+
+                &:hover,
+                &:focus {
+                    fill: var(--white-color);
+                    background-color: var(--blue-color);
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .page-footer__section {
+        padding-top: 0;
+        padding-bottom: 60px;
+        background-color: var(--footer-background);
+    }
+
+    .page-footer__container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer-newsletter {
+        margin-top: 72px;
+        margin-left: 77px;
+    }
+}
