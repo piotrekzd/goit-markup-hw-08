@@ -1766,16 +1766,16 @@ p {
   .grid__item:not(:last-child) {
     padding-bottom: 30px;
   }
-  .grid .card {
+  .card {
     width: 100%;
     height: auto;
     background: var(--white-color);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .grid .card:hover {
+  .card:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  .grid .card__title {
+  .card__title {
     box-sizing: border-box;
     padding-left: 24px;
     padding-top: 20px;
@@ -1786,7 +1786,7 @@ p {
     background: var(--white-color);
     border: 1px solid var(--picture-list-border);
   }
-  .grid .card__description {
+  .card__description {
     padding-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -1794,17 +1794,17 @@ p {
     letter-spacing: 0.03em;
     color: var(--grey-color);
   }
-  .grid .box {
+  .box {
     position: relative;
     overflow: hidden;
   }
-  .grid .box:hover {
+  .box:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  .grid .box:hover .overlay {
+  .box:hover .overlay {
     transform: translateY(0);
   }
-  .grid .overlay {
+  .overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -1814,7 +1814,7 @@ p {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(33, 150, 243, 0.9);
   }
-  .grid .overlay__text {
+  .overlay__text {
     padding: 49px 45px 49px 24px;
     margin: 0;
     font-size: 18px;
@@ -1824,7 +1824,7 @@ p {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .grid-section {
     padding-top: 0;
   }
@@ -1839,7 +1839,7 @@ p {
   }
   .card {
     width: 370px;
-    height: auto;
+    height: 404px;
     background: var(--white-color);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
