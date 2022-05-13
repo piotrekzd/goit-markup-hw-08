@@ -1088,7 +1088,13 @@ p {
     align-items: center;
   }
   .footer-address {
+    margin-right: 144px;
     text-align: center;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
   .address__list {
     margin-top: 20px;
@@ -1177,6 +1183,7 @@ p {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-newsletter {
     margin-top: 60px;
+    padding-bottom: 0;
   }
   .newsletter {
     display: flex;
@@ -1222,6 +1229,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-newsletter {
     margin-top: 60px;
+    padding-bottom: 0;
   }
   .newsletter {
     display: flex;

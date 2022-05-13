@@ -104,7 +104,14 @@
             }
         
             .footer-address {
+                margin-right: 144px;
                 text-align: center;
+            }
+
+            .page-footer__wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
             }
         
             .address__list {
