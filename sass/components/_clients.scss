@@ -1,34 +1,130 @@
-.clients__heading {
-    margin-bottom: 50px;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .clients {
+        margin-top: -30px;
+        margin-left: -30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.178;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+
+        &__item {
+            margin-top: 30px;
+            margin-left: 30px;
+            flex-basis: calc(100%/2-30px);
+        }
+
+        &__link {
+            width: 210px;
+            height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: var(--social-icon);
+            transition-property: border-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--clients-icon);
+            border-radius: 4px;
+
+            &:hover,
+            &:focus {
+                border-color: var(--blue-color);
+                fill: var(--blue-color);
+            }  
+        }
+    }
 }
 
-.clients__list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .clients {
+        margin-top: -30px;
+        margin-left: -30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.178;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+
+        &__item {
+            margin-top: 30px;
+            margin-left: 30px;
+            flex-basis: calc(100%/3-30px);
+        }
+
+        &__link {
+            width: 226px;
+            height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: var(--social-icon);
+            transition-property: border-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--clients-icon);
+            border-radius: 4px;
+
+            &:hover,
+            &:focus {
+                border-color: var(--blue-color);
+                fill: var(--blue-color);
+            }  
+        }
+    }
 }
 
-.clients__link {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--social-icon);
-    transition-property: border-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid var(--clients-icon);
-    border-radius: 4px;
+@media screen and (min-width: 1200px) {
+    .clients {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
 
-    &:hover,
-    &:focus {
-        border-color: var(--blue-color);
-        fill: var(--blue-color);
+        &__link {
+            width: 170px;
+            height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: var(--social-icon);
+            transition-property: border-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--clients-icon);
+            border-radius: 4px;
+
+            &:hover,
+            &:focus {
+                border-color: var(--blue-color);
+                fill: var(--blue-color);
+            }
+        }
     }
 }
