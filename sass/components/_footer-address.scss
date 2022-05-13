@@ -1,3 +1,5 @@
+@media screen and (min-width: 1200px) {
+
 .footer-address {
     margin-top: 60px;
     display: flex;
@@ -28,4 +30,5 @@
 .address__link--nav {
     font-style: normal;
     color: var(--white-color);
+}
 }
