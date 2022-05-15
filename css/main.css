@@ -1556,7 +1556,7 @@ p {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 48px 40px;
     background-color: var(--white-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1608,9 +1608,6 @@ p {
   .mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
     color: var(--blue-color);
   }
-  .mobile-menu__contact-list {
-    margin-top: 302px;
-  }
   .mobile-menu__contact-item {
     margin-bottom: 32px;
   }
@@ -1653,6 +1650,12 @@ p {
     line-height: 1.22;
     text-decoration: none;
     color: var(--blue-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
 
